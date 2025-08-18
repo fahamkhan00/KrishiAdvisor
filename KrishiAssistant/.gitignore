@@ -1,0 +1,5 @@
+agri_env/
+.env/
+.venv/
+env/
+venv/

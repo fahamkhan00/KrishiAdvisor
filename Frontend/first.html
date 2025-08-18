@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="first.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    @keyframes slideInLeft {
+      0% { transform: translateX(-100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideInRight {
+      0% { transform: translateX(100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    .animate-slideInLeft {
+      animation: slideInLeft 1.2s ease-out forwards;
+    }
+
+    .animate-slideInRight {
+      animation: slideInRight 1.2s ease-out forwards;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="text-green-600 font-bold text-xl flex items-center gap-2">
+            Krishi Advisor
+      </a>
+
+      <!-- Menu for Desktop -->
+      <div class="hidden md:flex space-x-6">
+        <a href="/" class="text-gray-700 hover:text-green-600">Home</a>
+        <a href="/disease" class="text-gray-700 hover:text-green-600">Disease Detection</a>
+        <a href="#" class="text-gray-700 hover:text-green-600">Weather</a>
+        <a href="/about" class="text-gray-700 hover:text-green-600">About</a>
+      </div>
+
+      <!-- chatBot Button -->
+      <div class="hidden md:block">
+        <a href="#" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+          Chat with Us 
+        </a>
+      </div>
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        ☰
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100">Home</a>
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100">Disease Detection</a>
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100">Weather</a>
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100">About</a>
+      <a href="#" class="block px-4 py-2 bg-green-500 text-white hover:bg-green-600">
+        Chat with Us
+      </a>
+    </div>
+  </nav>
+  <div class="home">
+  </div>
+  <div class="home bg-cover bg-center h-screen flex items-center justify-start" 
+    style="background-image: url('https://i.pinimg.com/1200x/8a/99/46/8a9946a8b667a6e7c792eb8b04beced0.jpg');">
+    <div class="flex justify-start h-full bg-black bg-opacity-40">
+        <!-- Container -->
+<div class="flex justify-between items-center px-16 py-10">
+
+  <!-- Left Paragraph -->
+  <div class="w-3/5 animate-slideInLeft ">
+    <h1 class="text-white text-5xl font-bold leading-tight hover:text-green-600 mb-6">
+      Empowering farmers with AI-driven crop disease detection, weather-based farming tips, 
+      and market insights — all in one place.
+    </h1>
+  </div>
+
+  <!-- Right Box -->
+  <div class="w-1/5 bg-white/80 p-6 rounded-lg shadow-lg animate-slideInRight">
+    <h2 class="text-green-700 text-2xl font-semibold mb-4">Why Choose Krishi Advisor?</h2>
+    <p class="text-gray-700 mb-4">
+      We help farmers make smarter decisions with AI-powered tools that detect crop diseases early, 
+      provide real-time weather updates, and share market prices for better profits.
+    </p>
+    <p class="text-gray-700 mb-6">
+      Whether you grow wheat, rice, or vegetables, our platform is designed to support you every step 
+      of the way.
+    </p>
+    <a href="/" 
+       class="bg-green-500 text-white px-5 py-3 rounded-lg hover:bg-green-600">
+      Get Started
+    </a>
+  </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
