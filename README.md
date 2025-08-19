@@ -23,7 +23,7 @@ This project was built during a Hackathon by a team of two developers.
 # 🛠️ 𝐈𝐧𝐬𝐭𝐚𝐥𝐥𝐚𝐭𝐢𝐨𝐧 & 𝐒𝐞𝐭𝐮𝐩
 ### ➊ 𝑪𝒍𝒐𝒏𝒆 𝒕𝒉𝒆 𝑹𝒆𝒑𝒐
 ```
-git clone https://github.com/your-username/KrishiAdvisor.git
+git clone https://github.com/fahamkhan00/KrishiAdvisor.git
 cd KrishiAdvisor
 ```
 
