@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Krishi-Advisor</title>
     <script src="first.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -45,7 +45,9 @@
 
       <!-- chatBot Button -->
       <div class="hidden md:block">
-        <a href="#" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        <a href="http://localhost:8501" target="_blank"
+    		 onclick="this.href = window.location.hostname ? 'http://' + window.location.hostname + ':8501' : 'http://localhost:8501'"
+		 class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
           Chat with Us 
         </a>
       </div>
@@ -60,7 +62,9 @@
       <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100">Disease Detection</a>
       <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100">Weather</a>
       <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100">About</a>
-      <a href="#" class="block px-4 py-2 bg-green-500 text-white hover:bg-green-600">
+      <a href="http://localhost:8501" target="_blank"
+         onclick="this.href = window.location.hostname ? 'http://' + window.location.hostname + ':8501' : 'http://localhost:8501'"
+	 class="block px-4 py-2 bg-green-500 text-white hover:bg-green-600">
         Chat with Us
       </a>
     </div>

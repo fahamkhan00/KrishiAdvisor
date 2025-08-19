@@ -4,7 +4,7 @@ from llama_cpp import Llama
 import os
 
 MODEL_PATH = os.path.expanduser(
-    "~/KrishiAdvisorApp/KrishiAssistant/llama.cpp/models/mistral-7b-instruct-v0.1.Q4_K_M.gguf"
+    "/app/llama.cpp/models/mistral-7b-instruct-v0.1.Q4_K_M.gguf"
 )
 
 llm = Llama(
